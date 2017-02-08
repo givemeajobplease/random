@@ -1,7 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
 #button-container {
     text-align: center;
 }
-
+body{
+overflow: hidden;
+background-color: white;
+}
 h1 {
     text-align: center;
+    font-family: Cabin Sketch;
+    color: gainsboro;
+}
+h3{
+text-align: center;
+}
+#name{
+    display: block;
+    text-align: center;
+}
+#nameone{
+    display: none;
+    text-align: center;
+}
+#nametwo{
+    display: none;
+    text-align: center;
+}
+#namethree{
+    display: none;
+    text-align: center;
+}
+#namefour{
+    display: none;
+    text-align: center;
+}
+#namefive{
+    display: none;
+    text-align: center;
+}
+#namesix{
+    display: none;
+    text-align: center;
+}
+
+#button-container {
+    position: absolute;
+    left: 666px;
+    top: 55px;
 }

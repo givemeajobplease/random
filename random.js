@@ -4,8 +4,47 @@ var namespace = "http://www.w3.org/2000/svg"
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
+
 function createFirstScene() {
-    
+    var random = Math.random()
+    // hair and face
+makeCircle(100, 50, 25, "brown", 1.0)
+makeCircle(100, 60, 20, "white", 1.0)
+if (random > 0.3){
+makeCircle(100, 45, 19, "red", 1.0)
+//name
+document.getElementById("name").setAttribute("style", "display: none;")
+document.getElementById("nameone").setAttribute("style", "display: block;")
+document.getElementById("nametwo").setAttribute("style", "display: none;")
+document.getElementById("namethree").setAttribute("style", "display: none;")
+document.getElementById("namefour").setAttribute("style", "display: none;")
+document.getElementById("namefive").setAttribute("style", "display: none;")
+document.getElementById("namesix").setAttribute("style", "display: none;")
+}else{
+//name
+document.getElementById("name").setAttribute("style", "display: none;")
+document.getElementById("nameone").setAttribute("style", "display: none;")
+document.getElementById("nametwo").setAttribute("style", "display: block;")
+document.getElementById("namethree").setAttribute("style", "display: none;")
+document.getElementById("namefour").setAttribute("style", "display: none;")
+document.getElementById("namefive").setAttribute("style", "display: none;")
+document.getElementById("namesix").setAttribute("style", "display: none;")
+}
+makeCircle(100, 50, 20, "tan", 1.0)
+   //neck and shirt
+makeEllipse(100, 90, 25, 20, "red", 1.0)
+makeRect(95, 60, 10, 20, "tan", 1.0)
+makeRect(75, 70, 15, 40, "white", 1.0)
+makeRect(110, 70, 15, 40, "white", 1.0)
+//teeth
+makeCircle(100, 60, 10, "white", 1.0)
+makeCircle(100, 50, 10, "tan", 1.0)
+//eyes
+makeCircle(90, 45, 3, "black", 1.0)
+makeCircle(110, 45, 3, "black", 1.0)
+
+
+
 }
 
 
@@ -13,7 +52,44 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+    var random = Math.random()
+    //hair and face
+makeCircle(100, 50, 25, "yellow", 1.0)
+makeCircle(100, 60, 20, "white", 1.0)
+if (random > 0.3){
+makeRect(120, 50, 4.9, 1.7, "blue", 1.0)
+makeRect(119, 45, 5.5, 1.7, "blue", 1.0)
+//name
+document.getElementById("name").setAttribute("style", "display: none;")
+document.getElementById("nameone").setAttribute("style", "display: none;")
+document.getElementById("nametwo").setAttribute("style", "display: none;")
+document.getElementById("namethree").setAttribute("style", "display: block;")
+document.getElementById("namefour").setAttribute("style", "display: none;")
+document.getElementById("namefive").setAttribute("style", "display: none;")
+document.getElementById("namesix").setAttribute("style", "display: none;")
+}else{
+//name
+document.getElementById("name").setAttribute("style", "display: none;")
+document.getElementById("nameone").setAttribute("style", "display: none;")
+document.getElementById("nametwo").setAttribute("style", "display: none;")
+document.getElementById("namethree").setAttribute("style", "display: none;")
+document.getElementById("namefour").setAttribute("style", "display: block;")
+document.getElementById("namefive").setAttribute("style", "display: none;")
+document.getElementById("namesix").setAttribute("style", "display: none;")
+}
+makeCircle(100, 50, 20, "tan", 1.0)
+   //neck and shirt
+makeEllipse(100, 90, 25, 20, "blue", 1.0)
+makeRect(95, 60, 10, 20, "tan", 1.0)
+makeRect(75, 70, 15, 40, "white", 1.0)
+makeRect(110, 70, 15, 40, "white", 1.0)
+//teeth
+makeCircle(100, 60, 6, "white", 1.0)
+//eyes
+makeCircle(90, 45, 3, "black", 1.0)
+makeCircle(110, 45, 3, "black", 1.0)
+makeCircle(88, 42, 3, "tan", 1.0)
+makeCircle(112, 42, 3, "tan", 1.0)
 }
 
 
@@ -21,7 +97,45 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    var random = Math.random()
+    //hair and face
+makeCircle(100, 50, 25, "red", 1.0)
+makeCircle(100, 60, 20, "white", 1.0)
+makeCircle(100, 50, 20, "tan", 1.0)
+//teeth
+makeCircle(100, 60, 5, "white", 1.0)
+makeRect(93, 60, 15, 5, "tan", 1.0)
+if (random < 0.33){
+  makeCircle(90, 55, 1, "brown", 1.0)  
+  //name
+document.getElementById("name").setAttribute("style", "display: none;")
+document.getElementById("nameone").setAttribute("style", "display: none;")
+document.getElementById("nametwo").setAttribute("style", "display: none;")
+document.getElementById("namethree").setAttribute("style", "display: none;")
+document.getElementById("namefour").setAttribute("style", "display: none;")
+document.getElementById("namefive").setAttribute("style", "display: block;")
+document.getElementById("namesix").setAttribute("style", "display: none;")
+}else{
+//name
+document.getElementById("name").setAttribute("style", "display: none;")
+document.getElementById("nameone").setAttribute("style", "display: none;")
+document.getElementById("nametwo").setAttribute("style", "display: none;")
+document.getElementById("namethree").setAttribute("style", "display: none;")
+document.getElementById("namefour").setAttribute("style", "display: none;")
+document.getElementById("namefive").setAttribute("style", "display: none;")
+document.getElementById("namesix").setAttribute("style", "display: block;")
+}
+    //neck and shirt
+makeEllipse(100, 90, 25, 20, "green", 1.0)
+makeRect(95, 60, 10, 20, "tan", 1.0)
+makeRect(75, 70, 15, 40, "white", 1.0)
+makeRect(110, 70, 15, 40, "white", 1.0)
+
+//eyes
+makeCircle(90, 45, 3, "black", 1.0)
+makeCircle(110, 45, 3, "black", 1.0)
+makeRect(85, 40, 10, 5, "tan", 1.0)
+makeRect(105, 40, 10, 5, "tan", 1.0)
 }
 
 
@@ -32,17 +146,23 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var myNumber = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
-    
+    if (myNumber < 0.33){
+        createFirstScene()
+    }
     
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
-    
+    else if (myNumber < 0.67){
+    createSecondScene()
+    }
     
     
     // Else, call the function to create your third scene.
-    
+    else{
+    createThirdScene()
+    }
     
     
 }

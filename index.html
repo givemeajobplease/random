@@ -5,8 +5,21 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Your Title Goes Here</h1>
+    <h1 class="noselect">Randomized Person</h1>
+      <h3 class="noselect">Name:</h3>
+      <p class="noselect" id="name">[name]</p>
+      <p class="noselect" id="nameone">Sally</p>
+      <p class="noselect" id="nametwo">Betty</p>
+      <p class="noselect" id="namethree">Alexa</p>
+      <p class="noselect" id="namefour">Betsy</p>
+      <p class="noselect" id="namefive">Spongebob Squarepants</p>
+      <p class="noselect" id="namesix">Angela</p>
     <svg id="canvas" width="100%" viewBox="0 0 200 100">
+        <circle cx="100" cy="50" r="20" fill="black"/>
+        <rect x="95" y="60" width="10" height="20" fill="black"/>
+        <text x="90" y="63" font-family="Verdana" font-size="35" fill="white">
+    ?
+  </text>
     </svg>
       <div id="button-container">
         <button onclick="createRandomScene()">Go!</button>
